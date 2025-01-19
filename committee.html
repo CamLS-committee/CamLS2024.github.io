@@ -25,7 +25,7 @@
             font-size: 100%;
         }
         .blue-text {
-            color: #eb6d2e;
+            color: #1E3A8A; /* Dark blue color */
         }
         .centered-text {
             text-align: center;
@@ -36,9 +36,33 @@
         td.navigation {
             padding: 0 20px; /* Adjust this value to increase or decrease the spacing */
         }
+        /* Table styles */
+        table {
+            width: 80%; /* Make the table take up 80% of the screen width */
+            margin: 30px auto; /* Center the table */
+            border-collapse: collapse; /* Remove spacing between cells */
+        }
+        th, td {
+            padding: 16px 20px; /* Increased padding for larger text */
+            text-align: center;
+            font-size: 1.25em; /* Larger text size */
+            color: #1E3A8A; /* Dark blue color */
+        }
+        th {
+            background-color: #4CAF50; /* Green header background */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray background for even rows */
+        }
+        tr:hover {
+            background-color: #ddd; /* Hover effect for rows */
+        }
+        td {
+            background-color: #f9f9f9; /* Light background color for cells */
+        }
     </style>
 </head>
-
 
 <body>
 
@@ -76,22 +100,63 @@
         </tr>
     </table>
 
-    <div style="text-align: center;">
-        <h1 style="font-size: 3em; color: #003366;">CamLS 2025 Committee</h1>
-        <h2 style="font-size: 1.5em; color: #003366;">
-            <li style="margin-bottom: 10px;">Qiuchen Zhao, President</li>
-            <li style="margin-bottom: 10px;">Boyang Wang, Secretary</li>
-            <li style="margin-bottom: 10px;">Yifan Gui, Treasurer</li>
-            <li style="margin-bottom: 10px;">Ruoqi Du, Secretary</li>
-            <li style="margin-bottom: 10px;">Xuehao Cui, Secretary</li>
-            <li style="margin-bottom: 10px;">Li Ma, Secretary</li>
-            <li style="margin-bottom: 10px;">Ruoqi Du, Secretary</li>
-            <li style="margin-bottom: 10px;">Jessy Jiayi Zhu, Secretary</li>
-            <li style="margin-bottom: 10px;">Woody Zhidong Zhang, IT</li>
-        </ul>
-    </div>
-    
-    
+    <!-- Committee Table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>OFFICE TITLE</th>
+                <th>NAME</th>
+                <th>COLLEGE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PRESIDENT/CHAIR</td>
+                <td>Qiuchen Zhao</td>
+                <td>Downing College</td>
+            </tr>
+            <tr>
+                <td>SECRETARY</td>
+                <td>Li Ma</td>
+                <td>Trinity College</td>
+            </tr>
+            <tr>
+                <td>TREASURER</td>
+                <td>Yifan Gui</td>
+                <td>Magdalene College</td>
+            </tr>
+            <tr>
+                <td>VICE-PRESIDENT</td>
+                <td>Jessy Jiayi Zhu</td>
+                <td>Queens’ College</td>
+            </tr>
+            <tr>
+                <td>VICE-PRESIDENT</td>
+                <td>Xin Ge</td>
+                <td>Murray Edwards College</td>
+            </tr>
+            <tr>
+                <td>IT Officer</td>
+                <td>Woody Zhidong Zhang</td>
+                <td>Trinity College</td>
+            </tr>
+            <tr>
+                <td>Event Officer</td>
+                <td>Xuehao Cui</td>
+                <td>Churchill College</td>
+            </tr>
+            <tr>
+                <td>External Relations Officer</td>
+                <td>Anqi Yu</td>
+                <td>Downing College</td>
+            </tr>
+            <tr>
+                <td>Policy Officer</td>
+                <td>Ruoqi Du</td>
+                <td>Murray Edwards College</td>
+            </tr>
+        </tbody>
+    </table>
     
 
     <footer>
